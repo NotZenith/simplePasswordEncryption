@@ -27,7 +27,7 @@ std::string encrypt(const std::string& password) {
 }
 
 // Decryption function
-string decrypt(string encrypted) {
+std::string decrypt(const std::string& encrypted) {
     // Step 1: Reverse back
     reverse(encrypted.begin(), encrypted.end());
 
