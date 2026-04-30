@@ -1,7 +1,8 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-using namespace std;
+// Reorganized structure
+#include <algorithm>
 
 // Encryption function
 string encrypt(string password) {
