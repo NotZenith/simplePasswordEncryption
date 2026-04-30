@@ -5,7 +5,7 @@
 #include <algorithm>
 
 // Encryption function
-string encrypt(string password) {
+std::string encrypt(const std::string& password) {
     string encrypted = "";
 
     for (int i = 0; i < password.length(); i++) {
