@@ -40,7 +40,7 @@ std::string decrypt(const std::string& encrypted) {
         c = c ^ 5;
 
         // Reverse shift
-        c = c - 3;
+        c = c - 7; // Corrected reverse shift
 
         decrypted += c;
     }
