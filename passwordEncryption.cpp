@@ -15,7 +15,7 @@ std::string encrypt(const std::string& password) {
         c = c + 7; // Increased shift value
 
         // Step 2: XOR with key
-        c = c ^ 5;
+        c = c ^ 13; // Updated XOR key
 
         encrypted += c;
     }
@@ -37,7 +37,7 @@ std::string decrypt(const std::string& encrypted) {
         char c = encrypted[i];
 
         // Reverse XOR
-        c = c ^ 5;
+        c = c ^ 13; // Updated XOR key
 
         // Reverse shift
         c = c - 7; // Corrected reverse shift
