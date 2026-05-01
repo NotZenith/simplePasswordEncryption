@@ -12,7 +12,7 @@ std::string encrypt(const std::string& password) {
         char c = password[i];
 
         // Step 1: Shift character
-        c = c + 3;
+        c = c + 7; // Increased shift value
 
         // Step 2: XOR with key
         c = c ^ 5;
