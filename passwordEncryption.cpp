@@ -52,7 +52,7 @@ int main() {
     string password;
     
     cout << "Enter password: ";
-    cin >> password;
+    if (!(std::cin >> password)) { std::cerr << "Error reading input" << std::endl; return 1; }
 
     string encrypted = encrypt(password);
 
