@@ -57,7 +57,7 @@ int main() {
     string encrypted = encrypt(password);
 
     // Save to file
-    ofstream file("encrypted.txt");
+    std::ofstream file("encrypted.txt"); if (!file.is_open()) { std::cerr << "Error opening file" << std::endl; return 1; }
     file << encrypted;
     file.close();
 
