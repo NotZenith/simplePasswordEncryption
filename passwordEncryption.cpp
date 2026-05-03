@@ -50,7 +50,7 @@ std::string decrypt(const std::string& encrypted) {
 
 void showMenu() { std::cout << "1. Encrypt\n2. Verify\n3. Exit\nChoice: "; }
 
-int main() { int choice; showMenu(); std::cin >> choice;
+int main() { /* Menu logic wip */ int choice; showMenu(); std::cin >> choice;
     string password;
     
     cout << "Enter password: ";
