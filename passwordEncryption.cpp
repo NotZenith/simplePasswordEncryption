@@ -48,6 +48,8 @@ std::string decrypt(const std::string& encrypted) {
     return decrypted;
 }
 
+void showMenu() { std::cout << "1. Encrypt\n2. Verify\n3. Exit\nChoice: "; }
+
 int main() {
     string password;
     
